@@ -1,0 +1,15 @@
+{
+  "name": "apickli",
+  "description": "apickli",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "cucumber.js test/features"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+  },
+  "devDependencies": {
+    "apickli": "^2.0.0",
+    "cucumber": "^3.0.6"
+  }
+}

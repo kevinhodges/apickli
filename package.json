@@ -6,7 +6,7 @@
     "test": "cucumber.js test/features"
   },
   "dependencies": {
-    "express": "^4.16.2",
+    "express": "^4.16.2"
   },
   "devDependencies": {
     "apickli": "^2.0.0",

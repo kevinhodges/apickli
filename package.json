@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "apickli": "^2.0.0",
-    "cucumber": "^3.0.6"
+    "cucumber": "^3.0.6",
+    "sinon": "^4.0.2"
   }
 }

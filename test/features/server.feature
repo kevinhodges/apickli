@@ -13,3 +13,8 @@ Feature: Example feature
   Scenario: Posting root checking that the json matches exactly
     When I POST to /
     Then response body should contain {"kevin":"hodges","foo":true}
+
+  Scenario: Posting root checking that the json matches exactly
+  	Given I use the readFileSync mock
+    When I POST to /
+    Then response body should contain {"kevin":"hodges","foo":true}

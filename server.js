@@ -1,5 +1,6 @@
-var express = require('express')
-var app = express()
+const express = require('express')
+const app = express()
+const fs = require('fs')
 
 const server = module.exports = { }
 
@@ -12,11 +13,21 @@ server.start = ( callback ) => {
 
 	// respond with "posted world" when a POST request is made to the homepage
 	app.post('/', function (req, res) {
-		res.send('posted world')
+
+		// something to stub
+		let fileContents = fs.readFileSync('names.json', 'utf8')
+		// real json please
+		fileContents = JSON.parse(fileContents)
+		res.send(fileContents)
+
 	})
 
 	app.listen(3000);
 
 	callback()
 
+}
+
+server.run = () => {
+	server.start( foo => console.log('server started') )
 }

@@ -1,11 +1,6 @@
 const apickli = require('apickli');
 const {defineSupportCode} = require('cucumber');
 
-// // set cucumber timeout (since The Works takes longer than the default to boot)
-// defineSupportCode(function ({ setDefaultTimeout }) {
-//   setDefaultTimeout(30 * 1000)
-// })
-
 var server = require('../../../server')
 
 var ourApickli
